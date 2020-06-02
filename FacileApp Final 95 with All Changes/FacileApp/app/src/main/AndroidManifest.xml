@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.creativeminds.facileapp">
+
+    <!--
+     The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+     Google Maps Android API v2, but you must specify either coarse or fine
+     location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ServiceProviderActivities.PaymentActivity" />
+        <activity android:name=".AdminActivities.UpdateServiceActivity" />
+        <activity android:name=".AdminActivities.RegisteredServicesActivity" />
+        <activity android:name=".ServiceProviderActivities.InProgressJobDetails" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ServiceProviderActivities.ProviderJobsActivity"
+            android:label="@string/title_activity_provider_jobs"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ServiceProviderActivities.UpdateServicesActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".AddtoCart" />
+        <activity
+            android:name=".AdminActivities.AllJobsActivity"
+            android:label="@string/title_activity_all_jobs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdminActivities.CustomerDetailsActivity" />
+        <activity android:name=".ServiceProviderActivities.VendorMapActivity" />
+        <activity
+            android:name=".JobHistoryActivity"
+            android:label="@string/title_activity_job_history"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdminActivities.AddServiceActivity" />
+        <activity android:name=".AdminActivities.RegisteredServiceProvidersActivity" />
+        <activity android:name=".AdminActivities.ServiceProviderDetailsActivity" />
+        <activity android:name=".AdminActivities.AllServiceProvidersActivity" />
+        <activity android:name=".AdminActivities.AllCustomersActivity" />
+        <activity android:name=".AdminActivities.AllComplaintsActivity" />
+        <activity android:name=".AdminActivities.AdminHomeActivity" />
+        <activity android:name=".ServiceProviderActivities.AllProvidersActivity" />
+        <activity android:name=".ComplainActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity
+            android:name=".AllServiceActivity"
+            android:label="@string/title_activity_all_service"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllDepartmentsActivity"
+            android:label="@string/title_activity_all_department"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ServiceProviderActivities.SerivceUpdatePasswordActivity" />
+        <activity android:name=".ServiceProviderActivities.ServiceProfileActivity" />
+        <activity
+            android:name=".ServiceProviderActivities.ServiceHomeActivity"
+            android:label="@string/title_activity_service_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ServiceProviderActivities.RegisterServiceActivity" />
+        <activity android:name=".ServiceProviderActivities.VendorOTP" />
+        <activity android:name=".RegisterAsActivity" />
+        <activity android:name=".CustomerOTP" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".VendorInProgressJobDetailsActivity" />
+        <activity android:name=".VendorCompletedJobDetailsActivity" />
+        <activity android:name=".ComplainVendorActivity" />
+        <activity android:name=".CustomerAllComplaints" />
+        <activity android:name=".Fragments.CustomerCompletedJobs" />
+        <activity android:name=".CustomerCompletedJobDetailsActivity" />
+        <activity android:name=".CustomerInProgressJobDetailsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAuSfJ-uGIS23f0ZC3i0yjwG-uNy7Lpoeg" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/NoAction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CustomerPayment" />
+        <activity android:name=".VendorPayment" />
+        <activity android:name=".UploadPortfolio" />
+        <activity android:name=".AddtoCart" />
+        <activity android:name=".CustomerAllComplaints" />
+        <activity android:name=".ChatMessage" />
+        <activity android:name=".PayActivity"></activity>
+    </application>
+
+</manifest>

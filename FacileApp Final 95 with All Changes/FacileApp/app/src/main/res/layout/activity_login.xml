@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".LoginActivity">
+
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/mainlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:id="@+id/logo_img"
+            />
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:hint="Enter Email"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
+                android:background="@drawable/edittext"
+                android:textColorHint="@color/colorPrimary"
+                android:paddingLeft="@dimen/_8sdp"
+                android:drawablePadding="@dimen/_8sdp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:paddingRight="@dimen/_8sdp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/logo_img"
+                android:textCursorDrawable="@drawable/cursor_color"
+                />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@+id/login_email"
+        android:textColorHint="@color/colorPrimary"
+        app:passwordToggleTint="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:hintEnabled="false"
+        android:id="@+id/log"
+        app:hintAnimationEnabled="false"
+        >
+        <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:hint="Enter Password"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_12sdp"
+        android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+        android:drawablePadding="@dimen/_8sdp"
+        android:background="@drawable/edittext"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:inputType="textPassword"
+            android:id="@+id/login_password"
+        android:textCursorDrawable="@drawable/cursor_color"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<EditText-->
+                <!--android:id="@+id/login_password"-->
+                <!--android:layout_below="@id/login_email"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_18sdp"-->
+                <!--android:hint="Enter Password"-->
+                <!--android:layout_marginLeft="@dimen/_12sdp"-->
+                <!--android:layout_marginRight="@dimen/_12sdp"-->
+                <!--android:textSize="@dimen/_12sdp"-->
+                <!--android:padding="@dimen/_12sdp"-->
+                <!--android:drawableLeft="@drawable/ic_vpn_key_black_24dp"-->
+                <!--android:drawablePadding="@dimen/_8sdp"-->
+                <!--android:background="@drawable/edittext"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textColorHint="@color/colorPrimary"-->
+                <!--android:paddingLeft="@dimen/_8sdp"-->
+                <!--android:paddingRight="@dimen/_8sdp"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:textCursorDrawable="@drawable/cursor_color"-->
+                <!--/>-->
+            <Button
+                android:id="@+id/login_button"
+                android:layout_below="@+id/log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient"
+                android:text="Log In"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="#fff"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="or"-->
+                <!--android:textSize="@dimen/_14sdp"-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:id="@+id/or"-->
+                <!--android:layout_below="@id/login_button"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--/>-->
+
+
+            <!--<com.facebook.login.widget.LoginButton-->
+                <!--android:id="@+id/login_fb"-->
+                <!--android:layout_below="@+id/or"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="10dp" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password? Reset Now"
+                android:layout_below="@id/login_button"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:id="@+id/forgot_password"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_12sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have Account? Signup"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/create_account"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/forgot_password"
+                android:layout_marginRight="@dimen/_12sdp"
+                />
+
+
+
+
+
+</RelativeLayout>

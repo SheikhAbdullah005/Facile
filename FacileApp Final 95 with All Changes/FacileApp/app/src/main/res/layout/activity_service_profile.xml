@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ServiceProviderActivities.ServiceProfileActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:id="@+id/profile_card"
+        app:cardElevation="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        >
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_camera"
+            android:id="@+id/service_profile_image"
+            />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/profile_card"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Update Services"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:layout_marginLeft="@dimen/_18sdp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_below="@id/profile_card"-->
+                <!--android:id="@+id/upd"-->
+                <!--android:textSize="@dimen/_13sdp"-->
+                <!--/>-->
+            <!--<GridLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/update_services"-->
+                <!--android:columnCount="3"-->
+                <!--android:layout_marginLeft="@dimen/_18sdp"-->
+                <!--android:layout_marginRight="@dimen/_18sdp"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:layout_marginBottom="@dimen/_10sdp"-->
+                <!--android:layout_below="@id/upd"-->
+                <!--&gt;-->
+
+            <!--</GridLayout>-->
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Online Status"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stat"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    />
+
+                <Switch
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/update_status"
+                    android:textOff="Offline"
+                    android:textOn="Online"
+                    android:theme="@style/ToggleSwitchTheme"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="@dimen/_18sdp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:hint="Full Name"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/up_full_name"
+                android:inputType="text"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Email"
+                android:backgroundTint="#e6e6e6"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/update_email"
+                android:enabled="false"
+                android:inputType="textEmailAddress"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Phone"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/up_phone"
+                android:inputType="phone"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Address"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/serivce_up_address"
+                android:inputType="text"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="City"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/service_up_city"
+                android:inputType="text"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_button"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@color/colorPrimary"
+                android:text="Update Profile"
+                android:textColor="#fff"
+                android:layout_marginBottom="@dimen/_18sdp"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

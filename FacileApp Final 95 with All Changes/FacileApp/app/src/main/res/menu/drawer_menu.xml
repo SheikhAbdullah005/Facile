@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/job_history"
+        android:title="Job History"
+        android:icon="@drawable/job_history"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/make_payment"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:title="Payment" />
+</menu>
