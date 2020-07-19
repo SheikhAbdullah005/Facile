@@ -69,7 +69,6 @@ class AddNewDept extends React.Component {
         console.log('check4',department);
       }).catch(err=>{
         this.setState({alert_message: "Error"})
-        console.log('WTF',err)
       })
   }
   render() {
