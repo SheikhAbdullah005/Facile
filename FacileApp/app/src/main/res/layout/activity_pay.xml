@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.creativeminds.facileapp.PayActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:id="@+id/profile_card"
+        app:cardElevation="@dimen/_7sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:id="@+id/abc">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Enter Your Card Details"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/_5sdp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:hint="e.g: 4242 4242 4242 4242"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@drawable/edittext"
+            android:id="@+id/cardNumber"
+            android:inputType="text"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="12"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/month"
+                android:inputType="number"
+                android:layout_below="@+id/cardNumber"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="/"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:padding="@dimen/_2sdp"
+                android:id="@+id/textView"
+                android:layout_alignBottom="@+id/month"
+                android:layout_toRightOf="@+id/month"
+                android:layout_toEndOf="@+id/month" />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="20"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/year"
+                android:inputType="number"
+                android:layout_below="@+id/cardNumber"
+                />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="CVC: 123"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@drawable/edittext"
+                android:id="@+id/cvc"
+                android:inputType="number"
+                android:layout_below="@+id/cardNumber"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:background="@drawable/bg_gradient"
+                android:onClick="submitCard"
+                android:text="Add card"
+                android:textColor="#fff"
+                android:textColorHint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/complete_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient"
+                android:text="Complete Job"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="#fff"
+                android:onClick="submitCard"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

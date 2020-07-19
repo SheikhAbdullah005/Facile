@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "102326689952",
+    "firebase_url": "https://facile-1a96a.firebaseio.com",
+    "project_id": "facile-1a96a",
+    "storage_bucket": "facile-1a96a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102326689952:android:97614f5ba810a2e71ce9c5",
+        "android_client_info": {
+          "package_name": "com.creativeminds.facileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102326689952-ibngi9570aog8ke4iqol871gbsgrrr51.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.creativeminds.facileapp",
+            "certificate_hash": "c2f98a74e3b1f2e768b5476eefb2762639c5cad7"
+          }
+        },
+        {
+          "client_id": "102326689952-8lbfh81o1sju2r4qf52brat19nioinib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEgkR2DvMK8Lh0rgwjjEHUi0kPgIrvn40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102326689952-8lbfh81o1sju2r4qf52brat19nioinib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
